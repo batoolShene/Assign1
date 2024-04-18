@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MathActivity">
+
+    <ImageView
+        android:id="@+id/mathIcon"
+        android:layout_width="420dp"
+        android:layout_height="306dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mathicon" />
+
+    <ImageButton
+        android:id="@+id/mathyoutubeBtn"
+        android:layout_width="188dp"
+        android:layout_height="173dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="64dp"
+        android:onClick="youtubeBtnOnClick"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/youtubeicon"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/mathbookBtn"
+        android:layout_width="192dp"
+        android:layout_height="186dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="bookBtnOnClick"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/mathyoutubeBtn"
+        app:layout_constraintEnd_toStartOf="@+id/mathquestionBookBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mathIcon"
+        app:layout_constraintVertical_bias="0.521"
+        app:srcCompat="@drawable/bookicon"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/mathquestionBookBtn"
+        android:layout_width="185dp"
+        android:layout_height="187dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="questionsBtnOnClick"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/mathyoutubeBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mathbookBtn"
+        app:layout_constraintTop_toBottomOf="@+id/mathIcon"
+        app:layout_constraintVertical_bias="0.489"
+        app:srcCompat="@drawable/questionsbookicon"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/backBtnMath"
+        android:layout_width="124dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="143dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="6dp"
+        android:onClick="backBtnOnClick"
+        android:text="Back"
+        android:textColorLink="#80B4E7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mathyoutubeBtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

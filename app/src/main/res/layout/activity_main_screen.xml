@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".mainScreen">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/startScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <ImageButton
+            android:id="@+id/mathBtn"
+            android:layout_width="176dp"
+            android:layout_height="137dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="152dp"
+            android:onClick="mathBtnOnClick"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/mathicon"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/physBtn"
+            android:layout_width="176dp"
+            android:layout_height="135dp"
+            android:layout_marginStart="208dp"
+            android:layout_marginBottom="152dp"
+            android:onClick="physBtnOnClick"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/physicsicon"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="413dp"
+            android:layout_height="356dp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/backgroundimg" />
+
+        <TextView
+            android:id="@+id/helloTxt"
+            android:layout_width="268dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="71dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="72dp"
+            android:layout_marginBottom="16dp"
+            android:text="Hello !"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toTopOf="@+id/mathBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/background" />
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginEnd="160dp"
+            android:layout_marginBottom="12dp"
+            android:onClick="backBtnOnClick"
+            android:text="Back"
+            android:textColorLink="#FDD451"
+            app:iconTint="#FED359"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:rippleColor="@color/black" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
